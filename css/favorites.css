@@ -1,0 +1,37 @@
+div#my-claimweb-icon {
+  position:relative;
+  padding-left: 28px;
+  padding-right: 2px; /* provides a gap on the icon to allow the favs-list to show further to the right on hover */
+}
+
+ul {
+/* from reset.css to clear browser-specific renderings for ul */
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul#favs-list {
+  padding: 5px;
+  background-color: #ffffff;
+  border: 1px dotted #2c3e50;
+  border-radius: 4px;
+  list-style-type: none;
+  position: absolute;
+  top: -6px;
+  left: 62px; /* left position tightly bound to padding-right of my-claimweb-icon. favs-list abs positioned immediately after gap provided by padding-right */
+  z-index: 201; /* imperative to hover over the My ClaimWeb navbar link (z-indexed at 200) */
+}
+
+ul#favs-list a {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
